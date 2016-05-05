@@ -1,0 +1,7 @@
+<h1>Log In</h1>
+<h2><%=@warning%></h2>
+<%= form_for :welcome do |f| %>
+    Name: <%= f.text_field :name %><br />
+    password : <%= f.text_field :password %><br />
+    <%= f.submit %>
+<% end %>
