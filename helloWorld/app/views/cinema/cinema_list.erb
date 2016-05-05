@@ -1,0 +1,14 @@
+<%= stylesheet_link_tag 'cinema_list.css' %>
+<table>
+  <tr>CINEMAS</tr>
+  <% @running_cinemas.each do |movieName| %>
+      <tr>
+        <td>
+          <%= movieName %>
+        </td>
+      </tr>
+
+  <% end %>
+</table>
+<!--<h1><%= @running_cinemas %></h1>-->
+<%= button_to 'Back To Home', cinema_index_path, :method => :post %>
