@@ -1,4 +1,29 @@
-<form method="post" action="/welcome/new" class="button_to">
-  <div><input value="New" type="submit"/></div>
+<form method="post" action="/welcome/index" class="button_to">
+  <div><input value="Throw" type="submit"/></div>
 </form>
 <h1><%=@diceValue%></h1>
+<table>
+  <tr>
+    <td id = "1">A</td>
+    <td id = "2">B</td>
+    <td id = "3">C</td>
+    <td id = "4">D</td>
+    <td id = "5">E</td>
+    <td id = "6">F</td>
+    <td id = "7">G</td>
+    <td id = "8">H</td>
+    <td id = "9">I</td>
+    <td id = "10">J</td>
+    <td id = "11">K</td>
+    <td id = "12">L</td>
+    <td id = "13">M</td>
+    <td id = "14">N</td>
+    <td id = "15">O</td>
+    <td id = "16">P</td>
+
+
+  </tr>
+</table>
+<script type="text/javascript" charset="utf-8">
+  document.getElementById(<%=@currentPosition%>).style.backgroundColor  = "#f3fde6";
+</script>
